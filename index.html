@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/a6a0c41fee.js" crossorigin="anonymous"></script>
+    <title> Audio Player </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    
+<div class="container">
+    <h1 class="icons"> A Simple media Player </h1>
+    <p class="headnote"> Just a simple media player App that performs basic functions as any other media player,<br> for now it plays just one pre-installed music video. updates would come in with time. <br> <br>  <span class="between">Hit play, you might just love the song...</span> </p>
+         <center>
+               <div class="player">
+      <video class="player__video viewer" src="./Timaya - Cold Outside feat. Buju (Official Video).mp4"></video>
+ 
+      <div class="player__controls">
+        <div class="progress">
+         <div class="progress__filled"></div>
+        </div>
+        <button class="player__button toggle" title="Play/Pause">►</button>
+        <input type="range" name="volume" title="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+        <input type="range" name="playbackRate" title="playBackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+        <button data-skip="-10" class="player__button" title="Backward">« 10s</button>
+        <button data-skip="25" class="player__button" title="Forward">25s »</button>
+         <button class="player__button toggle fullscreen" title="Full Screen"></button>
+      </div>
+    </div>
+
+    <div class="container">
+        <footer>
+          <div class="">
+            <div class="col-12 mt-3">
+              <div class="d-flex justify-content-center gap-4">
+                <a href="https://github.com/Benn1440" target="_blank" class="icons mx-3"
+                ><i class="bi bi-github"></i
+              ></a>
+                <a
+                  href="https://www.linkedin.com/in/benedict-okafor-967779176/"
+                  target="_blank"
+                  class="linkedin"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a
+                  href="https://twitter.com/NnanaBen"
+                  target="_blank"
+                  class="icons"
+                >
+                  <i class="bi bi-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <p class="text-center mt-3 texts-b text-dark">
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Built with javascript by
+              <a
+                class="base text-warning fw-lighter"
+                href="https://www.linkedin.com/in/benedict-okafor-967779176/"
+                >Benedict Okafor</a
+              >
+            </p>
+          </div>
+        </footer>
+      </div>
+
+
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
